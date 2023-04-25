@@ -32,19 +32,19 @@ export default class App extends Component {
             />
 
             <Button
-              text="( )"
+              text="x²"
               theme="secondary"
-              onPress={() => this.HandleTap("parentheses")}
+              onPress={() => this.HandleTap("exponencial")}
             />
 
             <Button
-              text="%"
+              text="x^"
               theme="secondary"
-              onPress={() => this.HandleTap("percentage")}
+              onPress={() => this.HandleTap("operator", "x^")}
             />
 
             <Button
-              text="÷"
+              text="/"
               theme="accent"
               onPress={() => this.HandleTap("operator", "/")}
             />
@@ -56,7 +56,7 @@ export default class App extends Component {
             <Button text="8" onPress={() => this.HandleTap("number", 8)} />
             <Button text="9" onPress={() => this.HandleTap("number", 9)} />
             <Button
-              text="×"
+              text="x"
               theme="accent"
               onPress={() => this.HandleTap("operator", "*")}
             />
