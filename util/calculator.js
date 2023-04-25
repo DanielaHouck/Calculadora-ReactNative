@@ -43,6 +43,11 @@ export const initialState = {
           currentValue: `${previous / current}`,
           ...resetState,
         };
+      case "x^":
+        return {
+          currentValue: `${previous ** current}`,
+          ...resetState,
+        };
   
       default:
         return state;
@@ -60,9 +65,9 @@ export const initialState = {
         return {
           currentValue: `${parseFloat(state.currentValue) * -1}`,
         };
-      case "parentheses":
+      case "exponencial":
         return {
-            currentValue: `${parseFloat(state.currentValue)}`,
+            currentValue: `${parseFloat(state.currentValue) ** 2}`,
         };  
       case "percentage":
         return {
